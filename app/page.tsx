@@ -4,12 +4,12 @@ import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
-   <div className="min-h-screen bg-white">
+   <div className="min-h-screen bg-black text-white">
       <Navbar />
       
       <main className="relative pt-32 pb-16 lg:pt-48">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 tracking-tight">
+          <h1 className="text-5xl md:text-7xl font-extrabold text-gray-500 tracking-tight">
             Elevate Your <span className="text-blue-600">Fitness</span> <br />
             with Intelligence
           </h1>
@@ -29,20 +29,40 @@ export default function Home() {
             </button>
           </div>
 
-          <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-6 rounded-3xl border border-gray-100 bg-gray-50">
-              <h3 className="text-xl font-bold mb-2">AI Generated</h3>
-              <p className="text-gray-600 text-sm">পাওয়ারফুল এআই দিয়ে আপনার জন্য একদম কাস্টম প্ল্যান।</p>
-            </div>
-            <div className="p-6 rounded-3xl border border-gray-100 bg-gray-50">
-              <h3 className="text-xl font-bold mb-2">Smart Tracking</h3>
-              <p className="text-gray-600 text-sm">প্রতিদিনের অগ্রগতি চেক করুন রিয়েল-টাইমে।</p>
-            </div>
-            <div className="p-6 rounded-3xl border border-gray-100 bg-gray-50">
-              <h3 className="text-xl font-bold mb-2">Expert Logic</h3>
-              <p className="text-gray-600 text-sm">প্রফেশনাল ফিটনেস কোচদের লজিক এবং এআই-এর সমন্বয়।</p>
-            </div>
-          </div>
+          <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+  {/* Card 1 */}
+  <div className="p-8 rounded-3xl border border-gray-800 bg-gray-900/50 backdrop-blur-sm hover:border-blue-600 transition-all group">
+    <div className="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
+      <span className="text-blue-600 group-hover:text-white text-xl font-bold">01</span>
+    </div>
+    <h3 className="text-xl font-bold mb-3 text-white">AI Generated</h3>
+    <p className="text-gray-400 text-sm leading-relaxed">
+      পাওয়ারফুল এআই দিয়ে আপনার জন্য একদম কাস্টম এবং পার্সোনালাইজড ওয়ার্কআউট প্ল্যান।
+    </p>
+  </div>
+
+  {/* Card 2 */}
+  <div className="p-8 rounded-3xl border border-gray-800 bg-gray-900/50 backdrop-blur-sm hover:border-blue-600 transition-all group">
+    <div className="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
+      <span className="text-blue-600 group-hover:text-white text-xl font-bold">02</span>
+    </div>
+    <h3 className="text-xl font-bold mb-3 text-white">Smart Tracking</h3>
+    <p className="text-gray-400 text-sm leading-relaxed">
+      প্রতিদিনের অগ্রগতি চেক করুন রিয়েল-টাইমে এবং আপনার লিমিটকে ছাড়িয়ে যান।
+    </p>
+  </div>
+
+  {/* Card 3 */}
+  <div className="p-8 rounded-3xl border border-gray-800 bg-gray-900/50 backdrop-blur-sm hover:border-blue-600 transition-all group">
+    <div className="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
+      <span className="text-blue-600 group-hover:text-white text-xl font-bold">03</span>
+    </div>
+    <h3 className="text-xl font-bold mb-3 text-white">Expert Logic</h3>
+    <p className="text-gray-400 text-sm leading-relaxed">
+      প্রফেশনাল ফিটনেস কোচদের লজিক এবং এআই-এর সমন্বয়ে তৈরি এক নতুন অভিজ্ঞতা।
+    </p>
+  </div>
+</div>
         </div>
       </main>
     </div>

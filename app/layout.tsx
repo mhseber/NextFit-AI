@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NextFit AI",
+  title: "NextFit AI | Smart Fitness Planner",
   description: "A fitness app powered by AI",
 };
 
